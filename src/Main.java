@@ -142,7 +142,7 @@ public class Main{
                 System.out.print("\n");
             }
         }
-    //15
+    //14
         public static void Fourteen(int len, int initialValue) {
         System.out.println("Задание 14");
         int[] arr = new int[len];
