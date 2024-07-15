@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class Main{
     public static void main(String[] args){
         makeNewEmployee();
@@ -23,10 +22,6 @@ public class Main{
             System.out.println("Часы работы: " + attractionFirst.getTime());
             System.out.println("Стоимость: " + attractionFirst.getCost());
         }
-    }
-
-
-
 
 
 
