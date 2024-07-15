@@ -32,5 +32,4 @@ public Person(String name, String position, String email, String phone_number, i
         persArray[4] = new Person("Levakova Sofiya", "Owner", "sofiya@mailbox.com", "892312316", 100000, 50);
             for (Person person : persArray)
                 System.out.println(person);
-        }
-    }
+        }}
