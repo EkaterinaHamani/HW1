@@ -2,15 +2,15 @@ public class Person {
     public String name;
     public String position;
     public String email;
-    public String phone;
+    public String phone_number;
     public int salary;
     public int age;
 
-public Person(String name, String position, String email, String phone, int salary, int age) {
+public Person(String name, String position, String email, String phone_number, int salary, int age) {
         this.name = name;
         this.position = position;
         this.email = email;
-        this.phone = phone;
+        this.phone_number = phone_number;
         this.salary = salary;
         this.age = age;}
 
@@ -19,7 +19,7 @@ public Person(String name, String position, String email, String phone, int sala
         return(name+ "\n-"
                 +position+ "\n-"
                 +email+ "\n-"
-                +phone+ "\n-"
+                +phone_number+ "\n-"
                 +salary+ "\n-"
                 +age);}
 
