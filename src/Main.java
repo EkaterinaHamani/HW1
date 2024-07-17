@@ -1,6 +1,5 @@
-public class Main {
+public class Main{
     public static void main(String[] args) {
-
         Cat vasiliy = new Cat("Василий", 10);
         Dog karat = new Dog("Карат");
         Cat murka = new Cat("Мурка", 20);
