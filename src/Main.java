@@ -15,6 +15,7 @@ public class Main{
         triangle.setBorderColor("Grey");
         triangle.printCharacteristics();
     }}
+  
 
 
 
