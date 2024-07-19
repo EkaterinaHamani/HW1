@@ -27,6 +27,3 @@ public class Main{
             System.out.println(attractionFirst);
             System.out.println(attractionSecond);
         }}
-
-
-
