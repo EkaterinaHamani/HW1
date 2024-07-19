@@ -1,40 +1,29 @@
 public class Main{
-    public static void main(String[] args) {
-        Cat vasiliy = new Cat("Василий", 10);
-        Dog karat = new Dog("Карат");
-        Cat murka = new Cat("Мурка", 20);
-        Dog almaz = new Dog("Алмаз");
-        vasiliy.run(150);
-        murka.run(201);
-        vasiliy.swim(1);
-
-        karat.run(500);
-        karat.run(501);
-        almaz.swim(9);
-        karat.swim(15);
-        System.out.println("Всего животных: " + Animals.getCountAnimal());
-        System.out.println("Всего котов: " + Cat.getCountCat());
-        System.out.println("Всего собак: " + Dog.getCountDod());
-
-        System.out.println("Задание про кормление котиков.");
-        Cat[] cats = new Cat[3];
-        cats[0] = new Cat("Соломон", 20);
-        cats[1] = new Cat("Мурзик", 40);
-        cats[2] = new Cat("Ася", 20);
-
-        Bowl bowl = new Bowl(70);
-        for (Cat i : cats) {
-            if (i.getSatiety() == 0) {
-                if (!bowl.checkFood(i.getAppetite())) {
-                    System.out.println("Коту " + i.getName() + " не хватило еды и его сытость: " + i.isHungry() +" .");
-                } else {
-                    i.eat(bowl);
-                    System.out.println("Кот " + i.getName() + " съел " + i.getAppetite() + " граммов корма и его сытость: " + i.isHungry()+ " .");
-                }
-                System.out.println("В миске осталось " + bowl.getFood() + " граммов корма.");
-            }
-        }
-        bowl.increaseFood();
-        System.out.println("В миске осталось " + bowl.getFood() + " граммов корма.");
+    public static void main(String[] args){
+        makeNewEmployee();
+        System.out.println("\n Задание 2 ");
+        Employee[] employeeArray = new Employee[5];
+        employeeArray[0] = new Employee("Ivanov Ivan", "Engineer", "ivan@mailbox.com", "892312312", 30000, 30);
+        employeeArray[1] = new Employee("Petrov Petr", "Master", "petr@mailbox.com", "892312313", 35000, 35);
+        employeeArray[2] = new Employee("Smirnov Victor", "Worker", "victor@mailbox.com", "892312314", 20000, 20);
+        employeeArray[3] = new Employee("Fedorov Vasiliy", "Manager", "vasiliy@mailbox.com", "892312315", 40000, 40);
+        employeeArray[4] = new Employee("Levakova Sofiya", "Owner", "sofiya@mailbox.com", "892312316", 100000, 50);
+        for (Employee employee : employeeArray)
+            System.out.println(employee);
+        startPark ();
     }
-}
+    //1
+       public static void makeNewEmployee()  {
+           System.out.println("\n Задание 1 ");
+           Employee petya = new Employee("Petya", "simple worker","mymail@mail.ru", "+79807666565", 2500, 35);
+           System.out.println(petya);
+    }
+    //3
+        public static void startPark() {
+            System.out.println("\n Задание 3 ");
+            Park park = new Park();
+            Park.Attractions attractionFirst = new Park.Attractions("Аттракцион первый","9:00", 600);
+            Park.Attractions attractionSecond = new Park.Attractions("Аттракцион второй","12:00", 1000);
+            System.out.println(attractionFirst);
+            System.out.println(attractionSecond);
+        }}
