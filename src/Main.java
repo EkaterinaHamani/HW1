@@ -12,6 +12,3 @@ try{
     System.out.println("Исключение для формата. " + e.getMessage());
 }
 }}
-
-
-
