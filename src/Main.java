@@ -40,14 +40,13 @@ public class Main {
     //3
     public static void printColor() {
         System.out.println("Задание 3");
-        int value = -78;
+        int value = 101;
         if (value <= 0) {
             System.out.println("Красный");
         }
         if (value > 0 & value <= 100) {
             System.out.println("Желтый");
-        }
-        if (value > 100) {
+        } else {
             System.out.println("Зеленый");
         }
     }
